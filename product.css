@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+}
+nav{
+   
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+}
+.nav{
+  display: flex;
+  background-color: white;
+}
+.logo{
+  margin-left: 5%;
+  margin-top: 2px;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 300px;
+  float: left;
+}
+.nav .search {
+  width: 30%;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 20%;
+  margin-top: 5px;
+  border-radius: 25%;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 34px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.counter-container{
+  display: flex;
+}
+#visitor-count {
+  font-size: 25px;
+  color: black;
+margin-top: 7px;
+
+}
+#counter {
+  font-size: 25px;
+  color: black;
+margin-top: 8px;
+
+}
+.topnav {
+  background-color:white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover{
+  color:#e91e63;
+}
+
+.topnav a:hover{
+  animation: animate 5s ease-in-out infinite alternate;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  30%{
+    color:#e91e63;
+  }
+  100%{
+    color:#e91e63;
+  }
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: #e91e63;
+  background: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .search {
+    width: 10%;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    border-radius: 25%;
+    display: flex;
+  }
+  #visitor-count {
+    font-size: 15px;}
+    #count {
+      font-size: 15px;}
+}
+.logo img{
+  margin-left: 1%;
+  margin-top: 18px;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 22%;
+  float: left;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+}
+.img{
+  float: left;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 25px rgb(83, 83, 83);
+}
+img{
+    height: 500px;
+    width: 400px;
+}
+.text{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin-left: 50px;
+}
+.checked {
+    color: orange;
+  }
+h3{
+    font-size: 35px;
+}
+h4{
+    font-size: 35px;
+    color: red;
+}
+p{
+    font-size: 20px;
+}
+h6{
+    font-size: 30px;
+}
+.text button{
+    font-size: 20px;
+    height: 30px;
+    width: 200px;
+    background-color:#24262b;
+    color: white;
+}
+.popup {
+    position: absolute;
+display: flex;
+   transition: transform 0.4s, top 0.4s;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    align-content: center;
+    top:10%;
+    display: none;
+    height: 500px;
+    margin-left: 45px;
+    margin-top: 50px;
+    width: 520px;
+    background: white;
+    border: 5px solid black;
+}
+.show {
+    display: block;
+}
+.billing{
+    
+/* position: absolute; */
+top: 0;
+width: 50%;
+height: 100%;
+display: flex;
+float: left;
+flex-direction: column;
+}
+.payment{
+/* position: absolute; */
+float: right;
+width: 50%;
+height: 100%;
+justify-content: center;
+background: transparent;
+
+}
+.popup .input-box input{
+margin-left: 20px;
+width: 80%;
+height: 28px;
+border: 1px solid black;
+box-shadow: 0 0 5px black;
+}
+.popup .input-box label{
+ color: black;
+ font-size: 20px;
+ padding: 20px;
+}
+.popup h1{
+font-size: 30px;
+margin: 10px;
+color: black;
+}
+.popup h3{
+font-size: 20px;
+margin-left: 40px;
+color: black;
+}
+.btn{
+    position: relative;
+    width: 150px;
+    height: 40px;
+  background: black;
+  color: white;
+          border:2px solid white;
+          outline: none;
+          border-radius: 40px;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: 600;
+          z-index: 1;
+          overflow: hidden;
+       margin-top: 20px;
+  }
+.info .input-box{
+    width: 100%;
+}
+.feedback{
+    width: 100%;
+}
+.feedback h1{
+    color: black;
+    font-size: 40px;
+}
+.feedback h2{
+    font-size: 30px;
+    color: black;
+}
+  .info label{
+    font-size: 20px;
+    color: black;
+  }
+  .feed input{
+    height: 130px;
+    width: 90%;
+    text-align: center;
+    border: 2px solid black;
+  }
+  .btn1{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    color: white;
+    background: black;
+    margin-top: 5px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background: #24262b;
+      /* padding: 70px 0; */
+  }
+  .footer-col{
+     width: 22%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  .footer h3{
+    font-size: 40px;
+    color: #ffffff;
+  }
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }

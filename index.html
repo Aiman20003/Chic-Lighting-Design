@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav"> 
+            <center><img  class="logo" src="pictures/home/logo.png"></center>
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="What are you looking for?">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+             </button>
+             </div>
+              <div class="counter-container">
+        <h1 id="visitor-count">Visitor:</h1>&nbsp;
+        <p id="counter">0</p>
+    </div>
+             <script>
+             let count = 0;
+// Increment the counter every second
+        setInterval(function() {
+        count++;
+        document.getElementById('counter').innerText = count;
+          },60000 );
+            </script>
+        </div> 
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+         <a href="#about">ABOUT</a>
+         <a  href="#ceiling-lights">CEILING LIGHTS</a>
+         <a href="#lamps">LAMPS</a>
+         <a  href="#fan">FANS</a>
+         <a  href="#chandeilier">CHANDEILIER</a>
+         <a  href="#pendant">PENDANT</a>
+         <a  href="#ledlight">LED Lights</a> 
+         <a href="#brand">BRAND</a>
+         <a  href="#gallery">GALLERY</a> 
+         <a  href="#contact">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        </nav>
+        <script>
+          function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        </script>
+<!-- home -->
+<div class="home"><br><br><br><br><br>
+        <h1><CENTER>WELCOME TO CHIC LIGHTNING</CENTER></h1>
+        <div class="animated-text">
+        <center>Here You Can Buy<span></span></center>
+      </div>
+    </div>
+<!-- home end -->
+<!-- about -->
+ <div class="about" id="about">
+<h1><center>ABOUT US</center></h1>
+     <div class="wrap">
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="pictures/home/missions.jpg" alt="">
+            <div class="title-flex">
+          <center><h3 class="box-title">OUR MISSION</h3></center>
+        
+            </div>
+            <p class="description">At Chic Lightning, we are passionate about delivering the best lighting designs, home decor and services to our customers. </p>
+          </div>
+        
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="pictures/home/visions.jpg" alt="">
+            <div class="title-flex">
+              <h3 class="box-title"> <center>OUR VISION</center></h3>
+            </div>
+            <p class="description">Chic Lighting & Design is an online retailer that specializes in LED Lights, Lamps, Chandeliers and Pendant lighting.  </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-top">
+            <img class="box-image" src="pictures/home/collection.jpg" alt="">
+            <div class="title-flex">
+             <center><h3 class="box-title"> COLLECTION</h3></center>
+            </div>
+            <p class="description"> We have a range of collections that include; crystal chandeliers, traditional chandeliers, modern chandeliers and many more.</p>
+          </div>
+        </div>
+      </div>
+<!-- about end -->
+<!-- sales -->
+<div class="sale">
+  <br><br>
+<div class="container">
+  <div class="square3">
+      <center><div class="text3">
+       <marquee> <h2> FREE DELIVERY ON ORDER MORE THAN $100</h2></marquee>
+      </div></center>
+  </div>
+  </div>
+      <div class="container">
+          <center>
+              <div class="square">
+                  <div class="teXt">SALE</div>
+              </div>
+          </center>
+          <center>
+              <div class="square1">
+                  <div class="teXt1">
+                      UP TO 50% OFF
+                  </div>
+              </div>
+          </center>
+      <center><div class="square2">
+          <h2>
+              SHOP ENTIRE SALE TILL NOVEMBER END
+          </h2>
+      </div></center>
+      </div>
+    </div>
+<!-- sales end -->
+<!-- ceiling light -- -->
+<br>
+<center>
+<div class="ceiling" id="ceiling-lights">
+    <center><h1>CEILING LIGHTS</h1></center>
+    <div class="gallery">
+    <ul class="controls">
+      <li class="buttons active " data-filter="all">all</li>
+        <li class="buttons " data-filter="chandeliers">CHANDEILIER</li>
+        <li class="buttons" data-filter="Pendant">PENDANT </li>
+        <li class="buttons" data-filter="track">TRACK</li>
+    </ul>
+    <div class="image-container">
+        <a href="ceiling_light (1).html" class=" image chandeliers">
+                <img src="pictures/ceiling_light/ceiling_light (1).jpg" alt="">
+        </a>
+        <a href="ceiling_light (2).html" class=" image chandeliers">
+                <img src="pictures/ceiling_light/ceiling_light (2).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (3).html" class=" image chandeliers">
+                <img src="pictures/ceiling_light/ceiling_light (3).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (4).html" class=" image Pendant">
+                <img src="pictures/ceiling_light/ceiling_light (4).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (5).html" class=" image Pendant">
+                <img src="pictures/ceiling_light/ceiling_light (5).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (6).html" class=" image Pendant">
+                <img src="pictures/ceiling_light/ceiling_light (6).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (7).html" class=" image track">
+                <img src="pictures/ceiling_light/ceiling_light (7).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (8).html" class=" image track">
+                <img src="pictures/ceiling_light/ceiling_light (8).jpg" alt="">
+        </a>
+
+        <a href="ceiling_light (9).html" class=" image track">
+                <img src="pictures/ceiling_light/ceiling_light (9).jpg" alt="">
+        </a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</center>
+<br>
+<!-- ceiling light end -->
+<!-- lamp start -->
+<br>
+<center>
+<div class="lamp" id="lamps"><br>
+  <center><h1>LAMP LIGHTS</h1></center>
+  <div class="gallery">
+    <ul class="controls">
+      <li class="buttons actives " data-filter="all">all</li>
+        <li class="buttons" data-filter="floor">FLOOR</li>
+        <li class="buttons" data-filter="table">TABLE </li>
+        <li class="buttons" data-filter="wall">WALL</li>
+    </ul>
+    <div class="image-container">
+  
+    <a href="lamp (1).html" class=" image chandeliers">
+      <img src="pictures/lamp/lamp (1).jpg" alt="">
+</a>
+<a href="lamp (2).html" class=" image chandeliers">
+      <img src="pictures/lamp/lamp (2).jpg" alt="">
+</a>
+
+<a href="lamp (3).html" class=" image chandeliers">
+      <img src="pictures/lamp/lamp (3).jpg" alt="">
+      </a>
+
+    <a href="lamp (4).html" class=" image Pendant">
+      <img src="pictures/lamp/lamp (4).jpg" alt="">
+</a>
+
+<a href="lamp (5).html" class=" image  Pendant">
+      <img src="pictures/lamp/lamp (5).jpg" alt="">
+</a>
+
+<a href="lamp (6).html" class=" image Pendant">
+      <img src="pictures/lamp/lamp (6).jpg" alt="">
+</a>
+
+    <a href="lamp (7).html" class=" image track">
+      <img src="pictures/lamp/lamp (7).jpg" alt="">
+</a>
+
+<a href="lamp (8).html" class=" image track">
+      <img src="pictures/lamp/lamp (8).jpg" alt="">
+</a>
+
+<a href="lamp (9).html" class=" image track">
+      <img src="pictures/lamp/lamp (9).jpg" alt="">
+</a>
+</div>
+</div>
+  </div>
+</center>
+  <br>
+  <!-- lamp end -->
+  <!-- fan start -->
+  <center>
+  <div class="fan" id="fan">
+    <center><h1>FANS</h1></center>
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons active " data-filter="all">all</li>
+          <li class="buttons " data-filter="chandeliers">CEILING</li>
+          <li class="buttons" data-filter="Pendant">STAND FAN</li>
+          <li class="buttons" data-filter="track">WALL MOUNTED</li>
+      </ul>
+      <div class="image-container">
+    
+      <a href="fan (1).html" class=" image chandeliers">
+        <img src="pictures/fans/fan (1).jpg" alt="">
+  </a>
+  <a href="fan (2).html" class=" image chandeliers">
+        <img src="pictures/fans/fan (2).jpg" alt="">
+  </a>
+  
+  <a href="fan (3).html" class=" image chandeliers">
+        <img src="pictures/fans/fan (3).jpg" alt="">
+        </a>
+  
+      <a href="fan (4).html" class=" image Pendant">
+        <img src="pictures/fans/fan (4).jpg" alt="">
+  </a>
+  
+  <a href="fan (5).html" class=" image Pendant">
+        <img src="pictures/fans/fan (5).jpg" alt="">
+  </a>
+  
+  <a href="fan (6).html" class=" image Pendant">
+        <img src="pictures/fans/fan (6).jpg" alt="">
+  </a>
+  <a href="fan (7).html" class=" image track">
+    <img src="pictures/fans/fan (7).jpg" alt="">
+</a>
+
+<a href="fan (8).html" class=" image track">
+    <img src="pictures/fans/fan (8).jpg" alt="">
+</a>
+
+<a href="fan (9).html" class=" image track">
+    <img src="pictures/fans/fan (9).jpg" alt="">
+</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</center>
+  <!-- fan end -->
+  <!-- led ligth start -->
+  <br>
+<center>
+  <div class="chandeilier" id="chandeilier">
+    <center><h1>CHANDEILIER LIGHTS</h1></center>
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons active " data-filter="all">all</li>
+          <li class="buttons " data-filter="chandeliers">CRYSTAL</li>
+          <li class="buttons" data-filter="Pendant">INDUSTRIAL</li>
+          <li class="buttons" data-filter="track">MODREN</li>
+      </ul>
+      <div class="image-container">
+    
+      <a href="chandeiliers (1).html" class=" image chandeliers">
+        <img src="pictures/chandeilier/chandeiler (1).jpg" alt="">
+  </a>
+  <a href="chandeiliers (2).html" class=" image chandeliers">
+        <img src="pictures/chandeilier/chandeiler (2).jpg" alt="">
+  </a>
+  
+  <a href="chandeiliers (3).html" class=" image chandeliers">
+        <img src="pictures/chandeilier/chandeiler (3).jpg" alt="">
+        </a>
+  
+      <a href="chandeiliers (4).html" class=" image Pendant">
+        <img src="pictures/chandeilier/chandeiler (4).jpg" alt="">
+  </a>
+  
+  <a href="chandeiliers (5).html" class=" image Pendant">
+        <img src="pictures/chandeilier/chandeiler (5).jpg" alt="">
+  </a>
+  
+  <a href="chandeiliers (6).html" class=" image Pendant">
+        <img src="pictures/chandeilier/chandeiler (6).jpg" alt="">
+  </a>
+  <a href="chandeiliers (7).html" class=" image track">
+    <img src="pictures/chandeilier/chandeiler (7).jpg" alt="">
+</a>
+
+<a href="chandeiliers (8).html" class=" image track">
+    <img src="pictures/chandeilier/chandeiler (8).jpg" alt="">
+</a>
+
+<a href="chandeiliers (9).html" class=" image track">
+    <img src="pictures/chandeilier/chandeiler (9).jpg" alt="">
+</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</center>
+  <!-- chandeiliers end -->
+  <br>
+  <!-- pedant start -->
+<center>
+  <div class="pendant" id="pendant">
+    <center><h1>PENDANT LIGHTS</h1></center>
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons active " data-filter="all">all</li>
+          <li class="buttons " data-filter="chandeliers">GLASS</li>
+          <li class="buttons" data-filter="Pendant">TRADITIONAL</li>
+          <li class="buttons" data-filter="track">MODREN</li>
+      </ul>
+      <div class="image-container">
+    
+      <a href="pendants (1).html" class=" image chandeliers">
+        <img src="pictures/pendants/pendant(1).jpg" alt="">
+  </a>
+  <a href="pendants (2).html" class=" image chandeliers">
+        <img src="pictures/pendants/pendant(2).jpg" alt="">
+  </a>
+  
+  <a href="pendants (3).html" class=" image chandeliers">
+        <img src="pictures/pendants/pendant(3).jpg" alt="">
+        </a>
+  
+      <a href="pendants (4).html" class=" image Pendant">
+        <img src="pictures/pendants/pendant(4).jpg" alt="">
+  </a>
+  
+  <a href="pendants (5).html" class=" image Pendant">
+        <img src="pictures/pendants/pendant(5).jpg" alt="">
+  </a>
+  
+  <a href="pendants (6).html" class=" image Pendant">
+        <img src="pictures/pendants/pendant(6).jpg" alt="">
+  </a>
+  <a href="pendants (7).html" class=" image track">
+    <img src="pictures/pendants/pendant(7).jpg" alt="">
+</a>
+
+<a href="pendants (8).html" class=" image track">
+    <img src="pictures/pendants/pendant(8).jpg" alt="">
+</a>
+
+<a href="pendants (9).html" class=" image track">
+    <img src="pictures/pendants/pendant(9).jpg" alt="">
+</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</center>
+  <!-- pendent end-->
+  <br>
+  <!-- fan start -->
+<center>
+  <div class="ledlight" id="ledlight">
+    <center><h1>LED LIGHTS</h1></center>
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons active " data-filter="all">all</li>
+          <li class="buttons " data-filter="chandeliers">STRING</li>
+          <li class="buttons" data-filter="Pendant">GARDEN</li>
+          <li class="buttons" data-filter="track">LANDSCAPE</li>
+      </ul>
+      <div class="image-container">
+    
+      <a href="led_light (1).html" class=" image chandeliers">
+        <img src="pictures/led_light/led-light (1).jpg" alt="">
+  </a>
+  <a href="led_light (2).html" class=" image chandeliers">
+        <img src="pictures/led_light/led-light (2).jpg" alt="">
+  </a>
+  
+  <a href="led_light (3).html" class=" image chandeliers">
+        <img src="pictures/led_light/led-light (3).jpg" alt="">
+        </a>
+  
+      <a href="led_light (4).html" class=" image Pendant">
+        <img src="pictures/led_light/led-light (4).jpg" alt="">
+  </a>
+  
+  <a href="led_light (5).html" class=" image Pendant">
+        <img src="pictures/led_light/led-light (5).jpg" alt="">
+  </a>
+  
+  <a href="led_light (6).html" class=" image Pendant">
+        <img src="pictures/led_light/led-light (6).jpg" alt="">
+  </a>
+  <a href="led_light (7).html" class=" image track">
+    <img src="pictures/led_light/led-light (7).jpg" alt="">
+</a>
+
+<a href="led_light (8).html" class=" image track">
+    <img src="pictures/led_light/led-light (8).jpg" alt="">
+</a>
+
+<a href="led_light (9).html" class=" image track">
+    <img src="pictures/led_light/led-light (9).jpg" alt="">
+</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</center>
+  <!-- ledlight end -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- magnifi -popup cdn  -->
+<script>
+  $(document).ready(function () {
+    // Ceiling Lights Controls
+    $(".ceiling .controls .buttons").click(function () {
+      $(this).addClass("active").siblings().removeClass('active');
+      var filter = $(this).attr('data-filter');
+      if (filter == 'all') {
+        $('.ceiling .image-container .image').show(400);
+      } else {
+        $('.ceiling .image-container .image').not('.' + filter).hide(200);
+        $('.ceiling .image-container .image').filter('.' + filter).show(400);
+      }
+    });
+
+    // Lamp Lights Controls
+    $(".lamp .controls .buttons").click(function () {
+      $(this).addClass("active").siblings().removeClass('active');
+      var filter = $(this).attr('data-filter');
+      if (filter == 'all') {
+        $('.lamp .image-container .image').show(400);
+      } else {
+        $('.lamp .image-container .image').not('.' + filter).hide(200);
+        $('.lamp .image-container .image').filter('.' + filter).show(400);
+      }
+    });
+
+    // Fan Controls
+    $(".fan .controls .buttons").click(function () {
+      $(this).addClass("active").siblings().removeClass('active');
+      var filter = $(this).attr('data-filter');
+      if (filter == 'all') {
+        $('.fan .image-container .image').show(400);
+      } else {
+        $('.fan .image-container .image').not('.' + filter).hide(200);
+        $('.fan .image-container .image').filter('.' + filter).show(400);
+      }
+    });
+
+    // Chandelier Lights Controls
+    $(".chandeilier .controls .buttons").click(function () {
+      $(this).addClass("active").siblings().removeClass('active');
+      var filter = $(this).attr('data-filter');
+      if (filter == 'all') {
+        $('.chandeilier .image-container .image').show(400);
+      } else {
+        $('.chandeilier .image-container .image').not('.' + filter).hide(200);
+        $('.chandeilier .image-container .image').filter('.' + filter).show(400);
+      }
+    });
+
+    // Pendant Lights Controls
+    $(".pendant .controls .buttons").click(function () {
+      $(this).addClass("active").siblings().removeClass('active');
+      var filter = $(this).attr('data-filter');
+      if (filter == 'all') {
+        $('.pendant .image-container .image').show(400);
+      } else {
+        $('.pendant .image-container .image').not('.' + filter).hide(200);
+        $('.pendant .image-container .image').filter('.' + filter).show(400);
+      }
+    });
+
+    // LED Lights Controls
+    $(".ledlight .controls .buttons").click(function () {
+      $(this).addClass("active").siblings().removeClass('active');
+      var filter = $(this).attr('data-filter');
+      if (filter == 'all') {
+        $('.ledlight .image-container .image').show(400);
+      } else {
+        $('.ledlight .image-container .image').not('.' + filter).hide(200);
+        $('.ledlight .image-container .image').filter('.' + filter).show(400);
+      }
+    });
+  });
+</script>
+  <!-- brands -->
+<div class="brand" id="brand">
+  <br><br>
+  <h1><center>FEATURED BRANDS</center></h1>
+  <center>
+      <br><br>
+      <div class="scroller1" >
+     <div class="hidecontainer"><video autoplay muted loop plays-inline class="backvideo">
+      <source src="pictures/home/brand1.mp4" type="video/mp4">
+    </video> <br><h3>LAMP PLUS</h3><br><button id="hide">Hide</button>
+      <button id="show">Show</button>
+    </div>  
+    <div class="hidecontainer"><video autoplay muted loop plays-inline class="backvideo">
+      <source src="pictures/home/brand2.mp4" type="video/mp4"></video><h3>KICHLERS</h3> <br><button id="hide1">Hide</button>
+      <button id="show1">Show</button>
+    </div> 
+    <div class="hidecontainer"><video autoplay muted loop plays-inline class="backvideo">
+      <source src="pictures/home/brand3.mp4" type="video/mp4"></video><h3>LITHOLOGY</h3><br><button id="hide3">Hide</button>
+      <button id="show3">Show</button>
+    </div>  
+      </div><br><br>
+      <div class="nav1" ><br>
+        <div class="text"><br>
+        <center><h2>LAMP PLUS</h2>
+    <p>At Lamps Plus, we believe in helping people create the homes of their dreams with lighting, furniture and décor that fits everyone's unique personality.</p>
+    </center></div> 
+    </div>
+    <div class="nav2"><br>
+      <div class="text"><br>
+      <center><h2>KICHLERS</h2><br>
+        <p>At Kichler, our past moves us forward. We have a strong history of quality, service and bringing people together. For more than 85 years.</p>
+  </center></div> 
+  </div>
+  <div class="nav3"><br>
+    <div class="text">
+    <center><h2>HORCHOW</h2><br>
+<p>
+  We know you have lots of options when it comes to buying home furnishings online, so we thought we’d introduce ourselves and share a bit of our philosophy and our background.</p>
+</center></div></div>
+<div class="nav4"><br>
+  <div class="text">
+  <center><h2>LITHOLOGY</h2><br>
+    <p>Our mission is to be the foremost lighting retailer, offering the widest variety of vendors, artful designs and cutting-edge technology.</p>
+</center></div> 
+</div><br><br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+                $(".nav1").hide(1000);
+            });
+            $("#show").click(function(){
+                $(".nav1").show(1000);
+            });
+        });
+        $(document).ready(function(){
+          $("#hide1").click(function(){
+                $(".nav2").hide(1000);
+            });
+            $("#show1").click(function(){
+                $(".nav2").show(1000);
+            });
+        });
+        $(document).ready(function(){
+          $("#hide2").click(function(){
+                $(".nav3").hide(1000);
+            });
+            $("#show2").click(function(){
+                $(".nav3").show(1000);
+            });
+        });
+        $(document).ready(function(){
+            $("#hide3").click(function(){
+                $(".nav4").hide(1000);
+            });
+            $("#show3").click(function(){
+                $(".nav4").show(1000);
+            });
+        });
+    </script>
+  </div>
+  </center>
+  <!-- brands end -->
+  <br>
+  <!-- gallery start -->
+  <div class="gallery1" id="gallery"><br>
+    <h1><center>GALLERY</center></h1><br>
+    <div class="scroller" style="--_animation-duration:50s">
+      <div class="scroller_inner">
+        <img src="pictures/gallery/gallery1.jpg">
+          <img src="pictures/gallery/gallery2.jpg">
+          <img src="pictures/gallery/gallery3.jpg">
+          <img src="pictures/gallery/gallery4.jpg">
+          <img src="pictures/gallery/gallery5.jpg">
+          <img src="pictures/gallery/gallery6.jpg">
+          <img src="pictures/gallery/gallery7.jpg">
+          <img src="pictures/gallery/gallery8.jpg">
+          <img src="pictures/gallery/gallery9.jpg">
+          <img src="pictures/gallery/gallery10.jpg">
+          <img src="pictures/gallery/gallery11.jpg">
+          <img src="pictures/gallery/gallery12.jpg">
+          <img src="pictures/gallery/gallery13.jpg">
+          <img src="pictures/gallery/gallery14.jpg">
+          <img src="pictures/gallery/gallery15.jpg">    
+      <div>
+        
+  </div>
+  <div class="scroller" style="--_animation-duration:500s">
+    <div class="scroller_inner">
+      <img src="pictures/gallery/gallery16.jpg">
+        <img src="pictures/gallery/gallery17.jpg">
+        <img src="pictures/gallery/gallery18.jpg">
+        <img src="pictures/gallery/gallery19.jpg">
+        <img src="pictures/gallery/gallery20.jpg">
+        <img src="pictures/gallery/gallery21.jpg">
+        <img src="pictures/gallery/gallery22.jpg">
+        <img src="pictures/gallery/gallery23.jpg">
+        <img src="pictures/gallery/gallery24.jpg">
+        <img src="pictures/gallery/gallery25.jpg">
+        <img src="pictures/gallery/gallery26.jpg">
+        <img src="pictures/gallery/gallery27.jpg">
+        <img src="pictures/gallery/gallery28.jpg">
+        <img src="pictures/gallery/gallery29.jpg">
+        <img src="pictures/gallery/gallery30.jpg">
+        <img src="pictures/gallery/gallery16.jpg">
+        <img src="pictures/gallery/gallery17.jpg">
+    <div>
+  </div>
+  </div>
+  </div>
+  </div><br><br><br>
+  <script>
+    const scrollers = document.querySelectorAll(".scroller");
+  
+  if (!window.matchMedia("(prefers.reduced-motion: reduced)").matches) {
+      addAnimation();
+  }
+  
+  function addAnimation(){
+      scrollers.forEach((scroller)=> {
+          scroller.setAttribute("data-animated" , true);
+  
+          const scrollerInner = scroller.querySelector(".scroller_inner");
+          const scrollerContent = Array.from(scrollerInner.children);
+  
+          scrollerContent.forEach((item) => {
+              const duplicatedItem = item.cloneNODE(true);
+              duplicatedItem.setAttribute("aria-hidden",true);
+              scrollerInner.appendChild(duplicatedItem);
+          });
+  
+      });
+  }
+  </script>
+  <!-- contact usstart -->
+  <div class="contact" id="contact">
+    <div class="content"><br>
+        <h1>CONTACT US</h1>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                <div class="text">
+                    <h3>ADDRESS</h3>
+                    <p>Mezzanine Floor, Rajput Twin Tower،Federal B Area Block 10 Gulberg Town, Karachi.</p>
+            </div>
+        </div>
+            <div class="box">
+                <div class="text">
+                    <h3>PHONE NUMBER</h3>
+                    <p>0336344258</p>
+                    </div>
+                </div>
+                <div class="box">
+                <div class="text">
+                    <h3>EMAIL</h3>
+                    <p>aptech12@gmail.com</p>
+                    </div>
+                </div>
+                </div>
+             <div class="contactform">
+                <form>
+                    <h2>SEND MESSAGE</h2>
+                    <div class="inputbox">
+                        <input type="text" name="username" required="required">
+                        <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="email" required="required">
+                            <span>Email</span>
+                            </div>
+                            <div class="inputbox">
+                                <input type="text" name="" required="required">
+                                <span>Typr Your Message</span>
+                                </div>
+                                <center><div class="inputbox">
+                                    <input type="submit" name="" value="SEND">
+                                    </div>
+                                </center>
+                </form>
+        </div>
+        </div>
+        </div>
+        </body>
+  <!--contact end  -->
+<!-- mapticker -->
+  <div id="ticker-container">
+    <div id="ticker-content">
+      <p id="date-time-location"></p>
+    </div>
+  </div>
+  <script>
+    function updateTicker() {
+  const tickerContent = document.getElementById('date-time-location');
+
+  // Get current date and time
+  const now = new Date();
+  const dateTimeString = now.toLocaleString();
+
+  // Get user's geolocation
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      const locationString = `Latitude: ${latitude}, Longitude: ${longitude}`;
+
+      // Update the ticker content
+      tickerContent.textContent = `${dateTimeString} | ${locationString}`;
+    });
+  } else {
+    tickerContent.textContent = dateTimeString;
+  }
+}
+
+updateTicker();
+setInterval(updateTicker, 60000); // Update every second
+  </script>
+  <!-- mapticker end -->
+<!-- footer start -->
+<footer class="footer"><br>
+  <center><h3>CHIC LIGHTNING</h3></center><br><br>
+  <div class="row">
+      <div class="footer-col">
+          <h4>GET HELP</h4>
+          <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="sitemap.html">Site Map</a></li>
+              <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>BRANDS</h4>
+          <ul>
+            <li><a href="index.html#brand">LAMPPLUS</a></li>
+            <li><a href="index.html#brand">KICHLER</a></li>
+            <li><a href="index.html#brand">HORCHOW</a></li>
+            <li><a href="index.html#brand">LITHOLOGY</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+          <h4>CATEGORIES</h4>
+          <ul>
+            <li><a  href="index.html#ceiling-lights">CEILING LIGHTS</a></li>
+            <li><a href="index.html#lamps">LAMPS</a></li>
+             <li><a  href="index.html#fan">FANS</a></li>
+             <li><a  href="index.html#chandeilier">CHANDEILIER</a></li>
+            <li> <a  href="index.html#pendant">PENDANT</a></li>
+              <li><a  href="index.html#ledlight">LED Lights</a> </li>
+         </ul>
+      </div>
+      <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+</footer>
+<!-- footer end -->
+</body>
+</html>

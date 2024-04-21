@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background:  #f3f0ee;
+    }
+    nav{
+    width: 100%;
+  }
+  .nav{
+    display: flex;
+    background-color: white;
+  }
+  .logo{
+    margin-left: 5%;
+    margin-top: 2px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 300px;
+    float: left;
+  }
+  .search {
+    width: 30%;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 10px;
+    border-radius: 25%;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: black;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 34px;
+    border: 1px solid black;
+    background: black;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #visitor-count {
+    font-size: 25px;
+    color: black;
+  margin-top: 20px;
+
+  }
+  #count {
+    font-size: 25px;
+    color: black;
+  margin-top: 20px;
+
+  }
+  .topnav {
+    background-color:white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover{
+    color:#e91e63;
+  }
+
+  .topnav a:hover{
+    animation: animate 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 1;
+    }
+    30%{
+      color:#e91e63;
+    }
+    100%{
+      color:#e91e63;
+    }
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: #e91e63;
+    background: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .search {
+      width: 10%;
+      position: relative;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 10px;
+      border-radius: 25%;
+      display: flex;
+    }
+    #visitor-count {
+      font-size: 15px;}
+      #count {
+        font-size: 15px;}
+  }
+  .logo img{
+    margin-left: 1%;
+    margin-top: 18px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 22%;
+    float: left;
+  }
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+       .section-col{
+            width: 29%;
+            padding: 0 15px;
+         }
+         .section-col h4{
+             font-size: 40px;
+             color: black;
+             text-transform: capitalize;
+             margin-bottom: 35px;
+             font-weight: 500;
+             position: relative;
+         }
+         .section-col h4::before{
+             content: '';
+             position: absolute;
+             left:0;
+             bottom: -10px;
+             background-color: #e91e63;
+             height: 2px;
+             box-sizing: border-box;
+             width: 50px;
+         }
+         .section-col ul li:not(:last-child){
+             margin-bottom: 10px;
+         }
+         .section-col ul li a{
+             font-size: 22px;
+             text-transform: capitalize;
+             color: rgb(60, 69, 92);
+             text-decoration: none;
+             font-weight: 300;
+             color:rgb(60, 69, 92);
+             display: block;
+             transition: all 0.3s ease;
+         }
+         .section-col ul li a:hover{
+             color:black;
+             padding-left: 8px;
+         }
+         /*responsive*/
+         @media(max-width: 767px){
+           .footer-col{
+             width: 50%;
+             margin-bottom: 30px;
+         }
+         }
+         @media(max-width: 574px){
+           .footer-col{
+             width: 100%;
+         }
+         }
+         #ticker-container {
+  background-color: #24262b;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#ticker-content {
+  display: inline-block;
+  animation: ticker 80s linear infinite;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+         .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background: #24262b;
+    /* padding: 70px 0; */
+}
+.footer-col{
+   width: 22%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer h3{
+  font-size: 40px;
+  color: #ffffff;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav"> 
+            <center><img  class="logo" src="pictures/home/logo.png"></center>
+            <div class="search">
+              <input type="text" class="searchTerm" placeholder="What are you looking for?">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+             </button>
+             </div>
+             <span id="visitor-count">Visitors: </span><span id="count" >0</span>
+            <script src="script.js"></script>
+            <script>
+              let visitorCount = 0;
+          
+          function updateVisitorCount() {
+            visitorCount++;
+            document.getElementById('count').textContent = visitorCount;
+          }
+            </script>
+           </div>
+        </div> 
+        <div class="topnav" id="myTopnav">
+          <a href="index.html#home" class="active">Home</a>
+         <a href="index.html#about">ABOUT</a>
+         <a  href="index.html#ceiling-lights">CEILING LIGHTS</a>
+         <a href="index.html#lamps">LAMPS</a>
+         <a  href="index.html#fan">FANS</a>
+         <a  href="index.html#chandeilier">CHANDEILIER</a>
+         <a  href="index.html#pendant">PENDANT</a>
+         <a  href="index.html#ledlight">LED Lights</a> 
+         <a  href="index.html#gallery">GALLERY</a> 
+         <a  href="index.html#contact">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        </nav>
+        <script>
+          function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+        </script><br><br><br>
+    <div class="section">
+        <div class="row">
+            <div class="section-col">
+                <h4> CHIC LIGHTNING</h4>
+                <ul>
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="index.html#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="section-col">
+            <h4>BRANDS</h4>
+            <ul>
+                <li><a href="index.html#brand">LAMPPLUS</a></li>
+                <li><a href="index.html#brand">KICHLER</a></li>
+                <li><a href="index.html#brand">HORCHOW</a></li>
+                <li><a href="index.html#brand">LITHOLOGY</a></li>
+            </ul>
+        </div>
+        <div class="section-col">
+            <h4>CATEGORIES</h4>
+            <ul>
+               <li><a  href="index.html#ceiling-lights">CEILING LIGHTS</a></li>
+               <li><a href="index.html#lamps">LAMPS</a></li>
+                <li><a  href="index.html#fan">FANS</a></li>
+                <li><a  href="index.html#chandeilier">CHANDEILIER</a></li>
+               <li> <a  href="index.html#pendant">PENDANT</a></li>
+                 <li><a  href="index.html#ledlight">LED Lights</a> </li>
+            </ul>
+        </div><br>
+        </div><br>
+        <div id="ticker-container">
+            <div id="ticker-content">
+              <p id="date-time-location"></p>
+            </div>
+          </div>
+          <script src="ticker.js"></script>
+          <script>
+            function updateTicker() {
+          const tickerContent = document.getElementById('date-time-location');
+        
+          // Get current date and time
+          const now = new Date();
+          const dateTimeString = now.toLocaleString();
+        
+          // Get user's geolocation
+          if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              const latitude = position.coords.latitude;
+              const longitude = position.coords.longitude;
+              const locationString = `Latitude: ${latitude}, Longitude: ${longitude}`;
+        
+              // Update the ticker content
+              tickerContent.textContent = `${dateTimeString} | ${locationString}`;
+            });
+          } else {
+            tickerContent.textContent = dateTimeString;
+          }
+        }
+        
+        updateTicker();
+        setInterval(updateTicker, 60000); // Update every minute
+          </script>
+        <footer class="footer"><br>
+            <center><h3>CHIC LIGHTNING</h3></center><br><br>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>GET HELP</h4>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                        <li><a href="index.html#contact">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>BRANDS</h4>
+                    <ul>
+                        <li><a href="index.html#brand">LAMPPLUS</a></li>
+                        <li><a href="index.html#brand">KICHLER</a></li>
+                        <li><a href="index.html#brand">HORCHOW</a></li>
+                        <li><a href="index.html#brand">LITHOLOGY</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CATEGORIES</h4>
+                    <ul>
+                        <li><a  href="index.html#ceiling-lights">CEILING LIGHTS</a></li>
+                        <li><a href="index.html#lamps">LAMPS</a></li>
+                         <li><a  href="index.html#fan">FANS</a></li>
+                         <li><a  href="index.html#chandeilier">CHANDEILIER</a></li>
+                        <li> <a  href="index.html#pendant">PENDANT</a></li>
+                          <li><a  href="index.html#ledlight">LED Lights</a> </li>
+                     </ul>
+                       
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          </footer>
+</html>
